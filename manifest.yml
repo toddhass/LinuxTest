@@ -1,8 +1,10 @@
 applications:
-- name: Kitura-Starter
+- path: .
   memory: 256M
   instances: 1
-  random-route: true
+  domain: mybluemix.net
+  name: LinuxTest
+  host: LinuxTest
   disk_quota: 1024M
+  buildpack: swift_buildpack_v2_0_4-20170125-2344
   command: Kitura-Starter
-  buildpack: swift_buildpack
